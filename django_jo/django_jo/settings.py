@@ -124,6 +124,18 @@ else:
     DATABASES['default']['OPTIONS'] = {'sslmode': 'disable'}
 
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd6o59a1vr7apit',
+        'USER': 'u368vaaq04pve0',
+        'PASSWORD': 'p90608fb7ca023c9d96b62ada42424823c71276389b6c36398c075db634402a44',
+        'HOST': 'ce0lkuo944ch99.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
+    }
+}
+
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',

@@ -1,2 +1,2 @@
-web: python jo/manage.py runserver 0.0.0.0:$PORT
+web: gunicorn django_jo.wsgi
 release: python jo/manage.py migrate

@@ -132,6 +132,9 @@ DATABASES = {
         'PASSWORD': 'p90608fb7ca023c9d96b62ada42424823c71276389b6c36398c075db634402a44',
         'HOST': 'ce0lkuo944ch99.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
         'PORT': '5432',
+         'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
 

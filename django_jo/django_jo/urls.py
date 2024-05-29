@@ -35,15 +35,6 @@ urlpatterns = [
     path('api/register/', RegisterUserAPIView.as_view(), name='register'), 
     path('', TemplateView.as_view(template_name='index.html')),
 
-    path('', index, name='index'),
-    path('offre/', index, name='index'),
-    path('login/', index, name='index'),
-    path('register/', index, name='index'),
-    path('profile/', index, name='index'),
-    path('admin/', index, name='index'),
-    path('cart/', index, name='index'),
-
-
 ]
 
 

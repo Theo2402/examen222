@@ -23,7 +23,7 @@ from purchase.views import PurchaseViewSet
 from rest_framework.routers import DefaultRouter
 from django.urls import path, include
 from django.views.generic import TemplateView
-
+from .views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -34,6 +34,16 @@ urlpatterns = [
     path('api/purchase/', include('purchase.urls')),
     path('api/register/', RegisterUserAPIView.as_view(), name='register'), 
     path('', TemplateView.as_view(template_name='index.html')),
+
+    path('', index, name='index'),
+    path('offre/', index, name='index'),
+    path('login/', index, name='index'),
+    path('register/', index, name='index'),
+    path('profile/', index, name='index'),
+    path('admin/', index, name='index'),
+    path('cart/', index, name='index'),
+
+
 ]
 
 

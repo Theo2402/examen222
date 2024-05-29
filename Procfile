@@ -1,2 +1,2 @@
+release: python jo/django_jo/manage.py collectstatic --noinput && python jo/django_jo/manage.py migrate
 web: gunicorn django_jo.wsgi
-release: python manage.py migrate
